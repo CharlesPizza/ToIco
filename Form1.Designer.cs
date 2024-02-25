@@ -32,16 +32,18 @@
             filePath = new TextBox();
             openFileDialog = new OpenFileDialog();
             pictureBox = new PictureBox();
+            convert = new Button();
+            comboBox = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox).BeginInit();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(445, 12);
+            button1.Location = new Point(428, 11);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(138, 23);
             button1.TabIndex = 0;
-            button1.Text = "button1";
+            button1.Text = "Select Image";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
@@ -58,17 +60,38 @@
             // 
             // pictureBox
             // 
-            pictureBox.Location = new Point(445, 41);
+            pictureBox.Location = new Point(12, 41);
             pictureBox.Name = "pictureBox";
-            pictureBox.Size = new Size(343, 397);
+            pictureBox.Size = new Size(554, 397);
             pictureBox.TabIndex = 2;
             pictureBox.TabStop = false;
+            // 
+            // convert
+            // 
+            convert.Location = new Point(699, 78);
+            convert.Name = "convert";
+            convert.Size = new Size(75, 23);
+            convert.TabIndex = 3;
+            convert.Text = "Convert";
+            convert.UseVisualStyleBackColor = true;
+            convert.Click += button2_Click;
+            // 
+            // comboBox
+            // 
+            comboBox.FormattingEnabled = true;
+            comboBox.Location = new Point(572, 79);
+            comboBox.Name = "comboBox";
+            comboBox.Size = new Size(121, 23);
+            comboBox.TabIndex = 5;
+            comboBox.SelectedIndexChanged += comboBox_SelectedIndexChanged;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(comboBox);
+            Controls.Add(convert);
             Controls.Add(pictureBox);
             Controls.Add(filePath);
             Controls.Add(button1);
@@ -85,5 +108,7 @@
         private TextBox filePath;
         private OpenFileDialog openFileDialog;
         private PictureBox pictureBox;
+        private Button convert;
+        private ComboBox comboBox;
     }
 }
