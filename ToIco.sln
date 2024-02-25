@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToIco", "ToIco.csproj", "{EE3B372C-0395-4FCA-8B2C-23D775ED6380}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE3B372C-0395-4FCA-8B2C-23D775ED6380}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE3B372C-0395-4FCA-8B2C-23D775ED6380}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE3B372C-0395-4FCA-8B2C-23D775ED6380}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE3B372C-0395-4FCA-8B2C-23D775ED6380}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AE24FCE2-4BC8-4ACD-9461-A68E8F3E7275}
+	EndGlobalSection
+EndGlobal
