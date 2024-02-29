@@ -56,6 +56,7 @@ namespace ToIco
         }
         public void ConvertImage(Bitmap oImage, string fPath)
         {
+            
             string nPath = fPath.Replace(Path.GetExtension(fPath).ToLower(), ".ico");
             using (Icon icon = Icon.FromHandle(oImage.GetHicon()))
             {
@@ -63,6 +64,14 @@ namespace ToIco
                 {
                     icon.Save(fileStream);
                 }
+            }
+            //Bitmap loadedicon = new System.Drawing.Bitmap(nPath);
+            Image iconvar = null;
+            iconvar?.Dispose();
+            using (Bitmap tempimage = new Bitmap(nPath, true))
+            {
+                iconvar = new Bitmap(tempimage);
+                convertPreview.Image = iconvar;
             }
 
         }

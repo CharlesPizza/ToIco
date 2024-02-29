@@ -34,7 +34,9 @@
             pictureBox = new PictureBox();
             convert = new Button();
             comboBox = new ComboBox();
+            convertPreview = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)convertPreview).BeginInit();
             SuspendLayout();
             // 
             // button1
@@ -68,7 +70,7 @@
             // 
             // convert
             // 
-            convert.Location = new Point(699, 78);
+            convert.Location = new Point(713, 78);
             convert.Name = "convert";
             convert.Size = new Size(75, 23);
             convert.TabIndex = 3;
@@ -79,17 +81,26 @@
             // comboBox
             // 
             comboBox.FormattingEnabled = true;
-            comboBox.Location = new Point(572, 79);
+            comboBox.Location = new Point(572, 78);
             comboBox.Name = "comboBox";
-            comboBox.Size = new Size(121, 23);
+            comboBox.Size = new Size(135, 23);
             comboBox.TabIndex = 5;
             comboBox.SelectedIndexChanged += comboBox_SelectedIndexChanged;
+            // 
+            // convertPreview
+            // 
+            convertPreview.Location = new Point(643, 128);
+            convertPreview.Name = "convertPreview";
+            convertPreview.Size = new Size(64, 64);
+            convertPreview.TabIndex = 6;
+            convertPreview.TabStop = false;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(convertPreview);
             Controls.Add(comboBox);
             Controls.Add(convert);
             Controls.Add(pictureBox);
@@ -98,6 +109,7 @@
             Name = "Form1";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)pictureBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)convertPreview).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -110,5 +122,6 @@
         private PictureBox pictureBox;
         private Button convert;
         private ComboBox comboBox;
+        private PictureBox convertPreview;
     }
 }
